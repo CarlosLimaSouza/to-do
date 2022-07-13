@@ -123,4 +123,7 @@ export default {
 .riscado {
   text-decoration: line-through;
 }
+.main-container {
+  width: 70%;
+}
 </style>
