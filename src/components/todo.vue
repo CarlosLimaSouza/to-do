@@ -26,12 +26,14 @@
       </thead>
       <tbody>
         <tr v-for="(tarefa, index) in tarefas" :key="index">
-          <td scope="row">
-            <span :class="{ riscado: tarefa.status === 'Finalizado' }">{{
-              tarefa.name
-            }}</span>
+          <td scope="row" class="tarefaColuna">
+            <span
+              class="text-break"
+              :class="{ riscado: tarefa.status === 'Finalizado' }"
+              >{{ tarefa.name }}</span
+            >
           </td>
-          <td>
+          <td class="processoColuna">
             <span
               class="pointer"
               @click="mudarStatus(index)"
@@ -71,7 +73,7 @@ export default {
       statusDisponivel: ["A fazer", "Em andamento", "Finalizado"],
       tarefas: [
         {
-          name: "terminar meu portfolio",
+          name: "Terminar meu portfolio",
           status: "A fazer",
         },
         {
@@ -124,6 +126,12 @@ export default {
   text-decoration: line-through;
 }
 .main-container {
-  width: 70%;
+  width: 60%;
+}
+.tarefaColuna {
+  width: 60%;
+}
+.processoColuna {
+  width: 25%;
 }
 </style>
