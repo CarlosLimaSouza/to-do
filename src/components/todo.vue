@@ -1,46 +1,49 @@
 <template>
   <div class="main-container">
-    <h2 class="text-center mt-5">Meu todo App</h2>
+    <h2 class="text-center mt-5 mb-5 text-dark titulo">Meu to-do app</h2>
 
     <!-- inputs -->
-    <div class="d-flex">
+    <div class="text__input d-flex mb-3 bg-transparent">
       <input
         type="text"
         placeholder="Sua tarefa"
         class="form-control"
         v-model="escreverTarefa"
+        @keyup.enter="enviarTarefa"
       />
-      <button @click="enviarTarefa" class="btn btn-warning rounded-0">
-        Submit
+      <button @click="enviarTarefa" class="btn btn-primary rounded-2">
+        Confirmar
       </button>
     </div>
     <!-- tabela de tarefas -->
-    <table class="table table-bordered mt-5">
-      <thead>
-        <tr>
-          <th scope="col">Tarefa</th>
-          <th scope="col">Progresso</th>
+    <table class="tabela table table-bordered bg-white rounded">
+      <thead class="border border-dark">
+        <tr class="text-light bg-dark">
+          <th class="tabela__head--tarefas" scope="col">Tarefas</th>
+          <th class="text-center" scope="col">Progresso</th>
           <th scope="col" class="text-center">#</th>
           <th scope="col" class="text-center">#</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="border border-secondary tabela__corpo">
         <tr v-for="(tarefa, index) in tarefas" :key="index">
-          <td scope="row" class="tarefaColuna">
+          <td class="tabela__corpo--tarefas" scope="row">
             <span
               class="text-break"
               :class="{ riscado: tarefa.status === 'Finalizado' }"
               >{{ tarefa.name }}</span
             >
           </td>
-          <td class="processoColuna">
+          <td class="text-center">
             <span
               class="pointer"
               @click="mudarStatus(index)"
               :class="{
-                'text-danger': tarefa.status === 'A fazer',
-                'text-warning': tarefa.status === 'Em andamento',
-                'text-success': tarefa.status === 'Finalizado',
+                'btn btn-danger': tarefa.status === 'A fazer',
+
+                'btn btn-warning text-white': tarefa.status === 'Em andamento',
+
+                'btn btn-success': tarefa.status === 'Finalizado',
               }"
               >{{ tarefa.status }}</span
             >
@@ -119,19 +122,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.pointer {
-  cursor: pointer;
-}
-.riscado {
-  text-decoration: line-through;
-}
-.main-container {
-  width: 60%;
-}
-.tarefaColuna {
-  width: 60%;
-}
-.processoColuna {
-  width: 25%;
-}
+@import "../sass/styles.scss";
 </style>

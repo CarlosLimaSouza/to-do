@@ -14,8 +14,20 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: fundation;
+  src: url("./fonts/EduNSWACTFoundation-VariableFont_wght.ttf");
+}
+
 #app {
   display: flex;
   justify-content: center;
+  background: rgb(181, 166, 166);
+  background: linear-gradient(
+    180deg,
+    rgba(181, 166, 166, 1) 0%,
+    rgba(73, 73, 77, 1) 100%
+  );
+  height: 100vh;
 }
 </style>
