@@ -1,7 +1,14 @@
-# to-do Ainda em desenvolvimento ( fazendo melhorias visuais)
+# to-do
+### Objetivo 
 
-![Sem título](https://user-images.githubusercontent.com/108387463/178417512-d404e9ff-334a-4cad-8b89-228c9fa13dcd.png)
+### Tecnologias treinadas
++ VUE.JS: uso de methods e data , para treinar a reatividade do vue
++ SASS : integração com vue.js
++ JS: Uso em conjunto com as binds do vue, uso de laços e metodos.
++ BOOTSTRAP: Integração com o vue.js e criação da tabela e botões.
 
+
+![screencapture-localhost-8080-2022-07-23-09_16_19](https://user-images.githubusercontent.com/108387463/180604516-0bfcfe88-e177-4c48-924b-17c65c21504d.jpg)
 ## Project setup
 
 ```
