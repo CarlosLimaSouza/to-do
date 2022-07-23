@@ -1,0 +1,49 @@
+.main-container {
+  width: 100%;
+  padding: 0px 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-family: "fundation";
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.text__input {
+  width: 70%;
+  max-width: 850px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.riscado {
+  text-decoration: line-through;
+}
+
+.tabela {
+  max-width: 1200px;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.tabela__head--tarefas {
+  padding-left: 1rem;
+}
+
+.tabela__corpo {
+  font-size: 1rem;
+}
+
+.tabela__corpo--tarefas {
+  font-family: "fundation";
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding-left: 1rem;
+}
+
+/* POMODORO *//*# sourceMappingURL=styles.css.map */

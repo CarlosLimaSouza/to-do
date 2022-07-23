@@ -84,7 +84,7 @@ export default {
           status: "A fazer",
         },
         {
-          name: "App to-do adicionar pomodoro",
+          name: "App to-do ",
           status: "A fazer",
         },
       ],
@@ -96,7 +96,7 @@ export default {
       if (this.tarefaEditada === null) {
         this.tarefas.push({
           name: this.escreverTarefa,
-          status: "to-do",
+          status: "A fazer",
         });
       } else {
         this.tarefas[this.tarefaEditada].name = this.escreverTarefa;

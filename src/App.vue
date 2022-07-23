@@ -20,14 +20,12 @@ export default {
 }
 
 #app {
-  display: flex;
-  justify-content: center;
+  height: 100vh;
   background: rgb(181, 166, 166);
   background: linear-gradient(
     180deg,
     rgba(181, 166, 166, 1) 0%,
     rgba(73, 73, 77, 1) 100%
   );
-  height: 100vh;
 }
 </style>
