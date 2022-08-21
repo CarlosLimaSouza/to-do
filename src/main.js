@@ -15,3 +15,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fas);
 
 createApp(App).component("fa", FontAwesomeIcon).mount("#app");
+
+new Vue({
+  render: (h) => h(App),
+}).$mount("#app");
